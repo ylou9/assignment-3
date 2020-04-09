@@ -13,7 +13,9 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(248,248,248,0.5)),url("../Images/nazareth_college_winter.jpg");
     background-size: cover;
     background-position: center;
+    display:flex;
     min-height:100vh;
+    flex-direction: column;
 }
 
 h2 {
@@ -82,11 +84,17 @@ header {
     flex-direction:column;
     justify-content:flex-end;
 }
+li {
+    display:flex;
+    flex-direction:row;
+    margin: 5em;
+    justify-content: center
+}
 
-@media screen and (max-width: 50) {
+@media screen and (max-width: 50rem) {
     harder,
     main,
-    footer {
+    footer{
         flex-direction:column;
     }
 }
